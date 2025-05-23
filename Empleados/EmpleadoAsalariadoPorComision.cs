@@ -1,11 +1,10 @@
-﻿using OOP_Herencia.Empleados;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Herencia
+namespace OOP_Herencia.Empleados
 {
     public class EmpleadoAsalariadoPorComision : Empleado
     {
@@ -24,8 +23,8 @@ namespace OOP_Herencia
         {
             if (salarioBase != 0)
             {
-                pagoSemanal = (ventasBrutas * tarifaComision) + salarioBase + (salarioBase * 0.10);
-                
+                pagoSemanal = ventasBrutas * tarifaComision + salarioBase + salarioBase * 0.10;
+
             }
             else
             {
